@@ -2,11 +2,11 @@
 # Task given the gross profit of an individual find the net profit
 
 # Lets begin by allowing the user to input their gross profit to find net profit
-
-grossprofit = float(input("Let us calculate your net profit, please enter your current gross profit"))
-print("Thank you for entering a feasible number for you grossprofit")
-children = int(input("Please enter the number of children you have"))
-print("Thank you for entering a feasible number of children")
+try:
+    grossprofit = float(input("Let us calculate your net profit, please enter your current gross profit"))
+    print("Thank you for entering a feasible number for you grossprofit")
+    children = int(input("Please enter the number of children you have"))
+    print("Thank you for entering a feasible number of children")
 
 except ValueError:
     # In case someone adds something that is not right I will return
@@ -19,12 +19,5 @@ except:
     print("I am sorry, the error is unexpected")
 else:
     print("Thanks for using our services")
-
 finally:
     print("Have a lovely day!")
-
-
-
-netprofit =
-if grossprofit<1000:
-    print("income tax", "=", grossprofit*0.90)
