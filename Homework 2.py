@@ -3,9 +3,9 @@
 
 # Lets begin by allowing the user to input their gross profit to find net profit
 try:
-    grossprofit = float(input("Let us calculate your net profit, please enter your current gross profit"))
-    print("Thank you for entering a feasible number for you grossprofit")
-    children = int(input("Please enter the number of children you have"))
+    grossprofit = float(input("Let us calculate your net profit, please enter your current gross profit "))
+    print("Thank you for entering a feasible number for you gross profit")
+    children = int(input("Please enter the number of children you have "))
     print("Thank you for entering a feasible number of children")
 
 except ValueError:
@@ -21,3 +21,10 @@ else:
     print("Thanks for using our services")
 finally:
     print("Have a lovely day!")
+
+if grossprofit < 1000 and children < 0:
+    print("Your gross propfit is ", grossprofit*0.90)
+elif 2000 > grossprofit > 1000 and children > 0:
+    print("Your gross propfit is ", grossprofit * 0.88)
+elif 4000 > grossprofit > 2000 and children > 0:
+    print("Your gross propfit is ", grossprofit * 0.86)
