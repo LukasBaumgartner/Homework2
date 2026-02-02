@@ -18,13 +18,13 @@ except NameError:
 except:
     print("I am sorry, the error is unexpected")
 else:
-    print("Thanks for using our services")
+    print("Thank you for using our services")
 finally:
     print("Have a lovely day!")
 
-if grossprofit < 1000 and children < 0:
+if grossprofit < 1000 and children == 0:
     print("Your gross propfit is ", grossprofit*0.90)
-elif 2000 > grossprofit > 1000 and children > 0:
+elif 2000 > grossprofit > 1000 and children == 0:
     print("Your gross propfit is ", grossprofit * 0.88)
-elif 4000 > grossprofit > 2000 and children > 0:
+elif 4000 > grossprofit > 2000 and children == 0:
     print("Your gross propfit is ", grossprofit * 0.86)
