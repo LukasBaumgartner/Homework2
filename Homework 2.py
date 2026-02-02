@@ -4,14 +4,9 @@
 # Lets begin by allowing the user to input their gross profit to find net profit
 
 grossprofit = float(input("Let us calculate your net profit, please enter your current gross profit"))
-try:
-    grossprofit = float(grossprofit)
-    print("Thank you for entering a feasible number for you grossprofit")
-
+print("Thank you for entering a feasible number for you grossprofit")
 children = int(input("Please enter the number of children you have"))
-try:
-    children = int(children)
-    print("Thank you for entering a feasible number of children")
+print("Thank you for entering a feasible number of children")
 
 except ValueError:
     # In case someone adds something that is not right I will return
