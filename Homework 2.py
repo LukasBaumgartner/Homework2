@@ -20,15 +20,13 @@ except:
 else:
     print("Thank you for using our services")
 finally:
-    print("Have a lovely day!")
+    print("We value your feedback, let us know whow we did")
 
-if grossprofit < 1000 and children == 0:
-    print("Your gross propfit is ", grossprofit*0.90)
-elif 2000 > grossprofit > 1000 and children == 0:
-    print("Your gross propfit is ", grossprofit * 0.88)
-elif 4000 > grossprofit > 2000 and children == 0:
-    print("Your gross propfit is ", grossprofit * 0.86)
-elif 2000 > grossprofit > 1000 and children == 0:
-    print("Your gross propfit is ", grossprofit * 0.88)
-elif 4000 > grossprofit > 2000 and children == 0:
-    print("Your gross propfit is ", grossprofit * 0.86)
+if grossprofit < 1000:
+    print("Your gross propfit is ", grossprofit*(0.90+children))
+elif 2000 > grossprofit > 1000:
+    print("Your gross propfit is ", grossprofit * (0.88+children))
+elif 4000 > grossprofit > 2000:
+    print("Your gross propfit is ", grossprofit * (0.86+(0.5*children)))
+elif 4000 > grossprofit:
+    print("Your gross propfit is ", grossprofit * (0.82+(0.5*children)))
